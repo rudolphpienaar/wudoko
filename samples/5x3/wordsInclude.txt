@@ -1,0 +1,8 @@
+echo
+baker
+apt
+toe
+ore
+eat
+cap
+
