@@ -1,9 +1,9 @@
-# runj
+# wudoko 
 
-_I just want to run a shell command from Python!_
+_Simple word board solver_
 
-[![Version](https://img.shields.io/docker/v/fnndsc/runj?sort=semver)](https://hub.docker.com/r/fnndsc/runj)
-[![MIT License](https://img.shields.io/github/license/fnndsc/runj)](https://github.com/FNNDSC/runj/blob/main/LICENSE)
+[![Version](https://img.shields.io/docker/v/rudolphpienaar/wudoko?sort=semver)](https://hub.docker.com/r/rudolphpienaar/wudoko)
+[![MIT License](https://img.shields.io/github/license/rudolphpienaar/wudoko)](https://github.com/FNNDSC/runj/blob/main/LICENSE)
 [![ci](https://github.com/FNNDSC/runj/actions/workflows/ci.yml/badge.svg)](https://github.com/FNNDSC/runj/actions/workflows/ci.yml)
 
 ```
@@ -14,6 +14,20 @@ _I just want to run a shell command from Python!_
 ██║███╗██║██║   ██║██║  ██║██║   ██║██╔═██╗ ██║   ██║
 ╚███╔███╔╝╚██████╔╝██████╔╝╚██████╔╝██║  ██╗╚██████╔╝
  ╚══╝╚══╝  ╚═════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═════╝
+
+                - - - - - - - - - - - - -
+                - o - - - - o - - - - o -
+                - - k - - - k - - - k - -
+                - - - o - - o - - o - - -
+                - - - - d - d - d - - - -
+                - - - - - u u u - - - - -
+                - o k o d u w u d o k o -
+                - - - - - u u u - - - - -
+                - - - - d - d - d - - - -
+                - - - o - - o - - o - - -
+                - - k - - - k - - - k - -
+                - o - - - - o - - - - o -
+                - - - - - - - - - - - - -
 
 ```
 
