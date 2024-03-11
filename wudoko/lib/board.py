@@ -34,18 +34,34 @@ class WordIterate:
 class Solution:
 
     def __init__(self):
-        self.boards:list[Grid]      = []
+        self.boards:list[Grid]          = []
+        self.illegalWords:list[str]     = []
+        self.legalWords:list[str]       = []
+        self.memo:dict                  = {}
+        self.usememoization:bool        = False
+        self.stateCount:int             = 0
+        self.stateCountShow:bool        = True
 
     def addToSolution(self, grid:Grid) -> None:
         self.boards.append(grid)
-        self.memo:dict  = {}
 
     def terminate(self, grid:Grid):
         if grid.is_full():
             self.addToSolution(grid)
 
+    def state_incr(self):
+        self.stateCount += 1
+        if self.stateCountShow:
+            print(f"Board state: {self.stateCount}      \r", end='')
+
     def add_word(self, grid:Grid, nextWordIterator:WordIterate) -> Grid:
-        # pudb.set_trace()
+        self.state_incr()
+        if self.usememoization:
+            state = (grid.strRep(), str(nextWordIterator))
+            if state in self.memo:
+                print("found state!")
+                return self.memo[state]
+
         word:str    = nextWordIterator()
         if not len(word):
             self.terminate(grid)
@@ -55,10 +71,14 @@ class Solution:
             trajectory:Trajectory   = Trajectory(grid.gridSize)
             trajectories:list[Path] = trajectory.paths_find(cell, len(word))
             for path in trajectories:
-                newGrid:Grid                = grid.copy()
-                newGrid.word_insert(word, path)
-                newWordIterator:WordIterate = nextWordIterator.copy()
-                self.add_word(newGrid, newWordIterator)
+                newGrid:Grid        = grid.copy()
+                if newGrid.word_canInsert(word, path):
+                    newGrid.word_insert(word, path)
+                    newWordIterator:WordIterate = nextWordIterator.copy()
+                    nextGrid:Grid               = self.add_word(newGrid, newWordIterator)
+                    if self.usememoization:
+                        nextState               = (nextGrid.strRep(), str(newWordIterator))
+                        self.memo[nextState]    =  nextState
         self.terminate(grid)
         return grid
 
@@ -72,7 +92,7 @@ class Solution:
         for word in illegalWords:
             boardIndex:int  = 0
             for grid in self.boards:
-                if grid.has_word(word):
+                if grid.contains_word(word):
                     if boardIndex not in illegalIndices:
                         illegalIndices.append(boardIndex)
                         illegalBoards.append(grid)
