@@ -33,7 +33,11 @@ _Simple word board solver_
 
 ## Abstract
 
-A recursive word board solver.
+`wudoko` is a word board builder. Given a grid size and list of words to include, `wudoko` will solve for all boards that contain these words. Words can be inserted as in the banner above, i.e. up/down, left/right, and diagonals. Optionally, a list of words or characters to not include can also be provided which will remove any boards accordingly. 
+
+## Notes
+
+This project uses recursion to explore the board solution space. On python, this solution seems extremely slow.
 
 ## Installation
 
@@ -49,11 +53,7 @@ pip3 install wudoko
 
 Alternatively, you can just `pip3 install -U ./` from the root directory of the source repo.
 
-## Usage
-
-A good set of exemplars is provided in the [`test_core.py`](https://github.com/FNNDSC/wudoko/blob/master/tests/test_core.py) test code.
-
-### script
+### Usage 
 
 For a given grid size, and a list of included/excluded words in separate files:
 
