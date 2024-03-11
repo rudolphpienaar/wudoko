@@ -64,9 +64,10 @@ class Grid:
     def word_canInsert(self, word:str, alonglocation:Path) -> bool:
         b_ret:bool      = True
         if len(word) != len(alonglocation.path):
-            raise ValueError(
-                f"length of word '{word}' and location path (len: {len(alonglocation.path)}) mismatch"
-            )
+            return False
+            # raise ValueError(
+            #     f"length of word '{word}' and location path (len: {len(alonglocation.path)}) mismatch"
+            # )
         char:str        = ''
         gridPos         = GridCoord(x = 0, y = 0)
         for char,gridPos in zip(word, alonglocation.path):
@@ -94,9 +95,36 @@ class Grid:
         return inserted
 
     def has_word(self, word:str) -> bool:
+        """ This searches the grid, cell by cell 
+        """
         wordFound:bool  = False
         try:
             for cell in self.cellIterate():
+                if not self.get(cell) == word[0]:
+                    continue
+                trajectory:Trajectory   = Trajectory(self.gridSize)
+                trajectories:list[Path] = trajectory.paths_find(cell, len(word))
+                for path in trajectories:
+                    if self.get_alongPath(path) == word:
+                        wordFound       = True
+                        raise BreakOut
+        except BreakOut:
+            pass
+        return wordFound
+
+    def has_char(self, char:str) -> list[GridCoord]:
+        indices = np.argwhere(self.grid == char)
+        return [GridCoord(x = idx[1], y = idx[0]) for idx in indices]
+
+    def contains_word(self, word:str) -> bool:
+        """ A more intelligent search that is faster than has_word()
+            Only search from cells that contain the first character
+            of the word, not the entire grid.
+        """
+        wordFound:bool  = False
+        gridCoords:list[GridCoord]  = self.has_char(word[0])
+        try:
+            for cell in gridCoords:
                 trajectory:Trajectory   = Trajectory(self.gridSize)
                 trajectories:list[Path] = trajectory.paths_find(cell, len(word))
                 for path in trajectories:
@@ -132,3 +160,10 @@ class Grid:
         for line in self.rows_get():
             wholeGrid += line + '\n'
         return wholeGrid
+
+    def strRep(self) -> str:
+        """ Return a single line representation of the grid
+           useful for memoization
+        """
+        sprint:str  = self.__str__()
+        return sprint.replace('\n', '_')
