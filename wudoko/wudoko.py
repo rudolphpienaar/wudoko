@@ -132,6 +132,9 @@ class Wudoko:
         self.wordsExclude:list[str] = []
         self.words_populate()
         self.solution               = Solution()
+        self.solution.legalWords    = self.words
+        if len(self.wordsExclude):
+            self.solution.illegalWords  = self.wordsExclude
 
     def gridDimensions_set(self) -> Dimensions:
        rows, cols = self.options.gridSize.split('x')
@@ -174,7 +177,7 @@ class Wudoko:
         initialGrid:Grid            = Grid(self.gridSize, " ")
         wordIterator:WordIterate    = WordIterate(self.words)
         self.solution.add_word(initialGrid, wordIterator)
-        print("All boards:")
+        print("\nAll boards:")
         self.boards_headerPrint(len(self.solution.boards))
 
     @pflog.tel_logTime(
@@ -189,23 +192,9 @@ class Wudoko:
                 self.boards_headerPrint(len(illegalSolutions), 'illegal')
                 # self.boards_print(illegalSolutions)
                 print("Legal Solutions:")
-                self.boards_print(self.solution.boards)
 
     def solve(self):
         self.solve_allBoards()
         self.prune_illegalBoards()
-        # initialGrid:Grid            = Grid(self.gridSize, " ")
-        # wordIterator:WordIterate    = WordIterate(self.words)
-        # self.solution.add_word(initialGrid, wordIterator)
-        # print("All boards:")
-        # self.boards_headerPrint(len(self.solution.boards))
-        # # self.boards_print(self.solution.boards)
-        # if len(self.wordsExclude):
-        #     illegalSolutions:list[Grid] = self.solution.pruneFromSolution(self.wordsExclude)
-        #     if len(illegalSolutions):
-        #         print("Disallowed Solutions:")
-        #         self.boards_headerPrint(len(illegalSolutions), 'illegal')
-        #         # self.boards_print(illegalSolutions)
-        #         print("Legal Solutions:")
-        #         self.boards_print(self.solution.boards)
+        self.boards_print(self.solution.boards)
         print("done!")
