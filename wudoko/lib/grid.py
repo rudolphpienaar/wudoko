@@ -95,7 +95,7 @@ class Grid:
         return inserted
 
     def has_word(self, word:str) -> bool:
-        """ This searches the grid, cell by cell 
+        """ This searches the grid, cell by cell
         """
         wordFound:bool  = False
         try:
@@ -111,6 +111,9 @@ class Grid:
         except BreakOut:
             pass
         return wordFound
+
+    def cell_isEmpty(self, cell:GridCoord) -> bool:
+        return True if self.get(cell) == self.fillChar else False
 
     def has_char(self, char:str) -> list[GridCoord]:
         indices = np.argwhere(self.grid == char)
