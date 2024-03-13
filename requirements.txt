@@ -4,3 +4,5 @@ pfmisc
 aiosmtpd
 pydantic
 pydantic-settings
+pflog
+numpy
