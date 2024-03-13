@@ -47,7 +47,11 @@ class Solution:
 
     def terminate(self, grid:Grid):
         if grid.is_full():
+            for word in self.illegalWords:
+                if grid.contains_word(word):
+                    return
             self.addToSolution(grid)
+            print(f"Valid solution found! Adding solution #{len(self.boards)}...")
 
     def state_incr(self):
         self.stateCount += 1
