@@ -68,6 +68,8 @@ class Solution:
             return grid
         cell:GridCoord  = GridCoord(x=0, y=0)
         for cell in grid.cellIterate():
+            # if not grid.cell_isEmpty(cell):
+            #     continue
             trajectory:Trajectory   = Trajectory(grid.gridSize)
             trajectories:list[Path] = trajectory.paths_find(cell, len(word))
             for path in trajectories:
