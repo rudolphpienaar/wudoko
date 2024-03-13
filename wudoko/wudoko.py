@@ -173,7 +173,8 @@ class Wudoko:
     )
     def solve_allBoards(self):
         print("Solving wudoko!")
-        print(f"Legal words: {self.words}")
+        print(f"Legal words:   {self.words}")
+        print(f"Illegal words: {self.wordsExclude}")
         initialGrid:Grid            = Grid(self.gridSize, " ")
         wordIterator:WordIterate    = WordIterate(self.words)
         self.solution.add_word(initialGrid, wordIterator)
@@ -195,6 +196,6 @@ class Wudoko:
 
     def solve(self):
         self.solve_allBoards()
-        self.prune_illegalBoards()
+        # self.prune_illegalBoards()
         self.boards_print(self.solution.boards)
         print("done!")
