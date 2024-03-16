@@ -7,6 +7,7 @@ from    wudoko.models.data      import Space, Dimensions, GridCoord, BreakOut
 from    wudoko.lib.path         import Path
 from    wudoko.lib.trajectory   import Trajectory
 from    typing                  import Generator
+import  string
 
 class Grid:
     """ Keep in mind that the Grid is "internally" referenced by (row, col) in
@@ -61,13 +62,13 @@ class Grid:
     def empty(self, coord:GridCoord) -> bool:
         return True if self.get(coord) == self.fillChar else False
 
+    def word_alongPathHasSpaces(self, alonglocation:Path) -> bool:
+        return self.fillChar in self.get_alongPath(alonglocation)
+
     def word_canInsert(self, word:str, alonglocation:Path) -> bool:
         b_ret:bool      = True
         if len(word) != len(alonglocation.path):
             return False
-            # raise ValueError(
-            #     f"length of word '{word}' and location path (len: {len(alonglocation.path)}) mismatch"
-            # )
         char:str        = ''
         gridPos         = GridCoord(x = 0, y = 0)
         for char,gridPos in zip(word, alonglocation.path):
@@ -115,6 +116,12 @@ class Grid:
     def cell_isEmpty(self, cell:GridCoord) -> bool:
         return True if self.get(cell) == self.fillChar else False
 
+    def cell_canStart(self, cell:GridCoord, word:str) -> bool:
+        cellOK:bool = True if self.get(cell) == self.fillChar else False
+        if not cellOK:
+            cellOK  = True if self.get(cell) == word[0] else False
+        return cellOK
+
     def has_char(self, char:str) -> list[GridCoord]:
         indices = np.argwhere(self.grid == char)
         return [GridCoord(x = idx[1], y = idx[0]) for idx in indices]
@@ -150,6 +157,9 @@ class Grid:
         is_alphabetic:np.ndarray    = ((nonEmptyCells >= 'a') & (nonEmptyCells <= 'z')) |\
                                       ((nonEmptyCells >= 'A') & (nonEmptyCells <= 'Z'))
         return bool(np.all(is_alphabetic))
+
+    def is_equal(self, grid:'Grid') -> bool:
+        return np.array_equal(self.grid, grid.grid)
 
     # These two methods are just to get the grid as a string, i.e. for printing
     def rows_get(self) -> Generator[str, None, None]:
