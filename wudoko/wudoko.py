@@ -131,10 +131,6 @@ class Wudoko:
         self.words:list[str]        = []
         self.wordsExclude:list[str] = []
         self.words_populate()
-        self.solution               = Solution()
-        self.solution.legalWords    = self.words
-        if len(self.wordsExclude):
-            self.solution.illegalWords  = self.wordsExclude
 
     def gridDimensions_set(self) -> Dimensions:
        rows, cols = self.options.gridSize.split('x')
@@ -145,7 +141,7 @@ class Wudoko:
                                             wordFile_read(self.options.wordInclude)
                                         )
         # sort word list from longest to shortest
-        self.words                  = sorted(self.words, key = len, reverse = True)
+        # self.words                  = sorted(self.words, key = len, reverse = True)
         self.wordsExclude:list[str] = []
         if len(self.options.wordExclude):
             self.wordsExclude       = emptyStrings_remove(
@@ -171,31 +167,61 @@ class Wudoko:
     @pflog.tel_logTime(
             event   = 'Solve for all solutions'
     )
-    def solve_allBoards(self):
+    def solve_allBoards(self) -> Solution:
         print("Solving wudoko!")
         print(f"Legal words:   {self.words}")
         print(f"Illegal words: {self.wordsExclude}")
-        initialGrid:Grid            = Grid(self.gridSize, " ")
-        wordIterator:WordIterate    = WordIterate(self.words)
-        self.solution.add_word(initialGrid, wordIterator)
-        print("\nAll boards:")
-        self.boards_headerPrint(len(self.solution.boards))
+        initialGrid:Grid    = Grid(self.gridSize, "*")
+        # pudb.set_trace()
+
+        # holder for full solutions
+        fullSolution        = Solution(self.words, self.wordsExclude)
+
+        # First, solve for all partial solutions
+        partialSolution     = Solution(self.words, self.wordsExclude)
+        partialSolution.terminateInfo = "Adding partial solution"
+        # self.solution.add_word(initialGrid, wordIterator)
+        word:str            = partialSolution.wordIterator.wordAfter('')
+        partialSolution.add_word(initialGrid, word)
+
+        # remove duplicates
+        partialSolution.boards = partialSolution.duplicatesRemove()
+        # Now consider each partial solution as candidate for complete solution
+        for candidateGrid in partialSolution.boards:
+            candidateSolution:Solution  = Solution(self.words)
+            candidateSolution.pathMustHaveSpaces = True
+            candidateSolution.terminateInfo = "Solving partial solution"
+            word:str                    = candidateSolution.wordIterator.wordAfter('')
+            candidateSolution.add_word(candidateGrid, word)
+            if not candidateSolution.boards:
+                if not candidateGrid.is_full():
+                    candidateSolution.fillAnyBlanks(candidateGrid)
+            candidateSolution.boards    = candidateSolution.duplicatesRemove()
+            candidateSolution.pruneMissingFromSolution(self.words)
+            for solutionGrid in candidateSolution.boards:
+                if not fullSolution.hasGrid(solutionGrid):
+                    fullSolution.boards.append(solutionGrid)
+
+        return fullSolution
 
     @pflog.tel_logTime(
             event   = 'Solve for illegal solutions'
     )
-    def prune_illegalBoards(self):
+    def prune_illegalBoards(self, solution:Solution) -> Solution:
         if len(self.wordsExclude):
             print(f"Removing all grids with illegal words: {self.wordsExclude}")
-            illegalSolutions:list[Grid] = self.solution.pruneFromSolution(self.wordsExclude)
+            illegalSolutions:list[Grid] = solution.pruneFromSolution(self.wordsExclude)
             if len(illegalSolutions):
                 print("Disallowed Solutions:")
                 self.boards_headerPrint(len(illegalSolutions), 'illegal')
                 # self.boards_print(illegalSolutions)
                 print("Legal Solutions:")
+        return solution
 
     def solve(self):
-        self.solve_allBoards()
-        # self.prune_illegalBoards()
-        self.boards_print(self.solution.boards)
+        solution:Solution = self.solve_allBoards()
+        self.prune_illegalBoards(solution)
+        print("\nAll boards:")
+        self.boards_headerPrint(len(solution.boards))
+        self.boards_print(solution.boards)
         print("done!")
