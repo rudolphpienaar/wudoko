@@ -1,0 +1,1327 @@
+- - - - - - - - - - - - -
+- [1;33mo[0m - - - - [1;33mo[0m - - - - [1;33mo[0m -
+- - [1;33mk[0m - - - [1;33mk[0m - - - [1;33mk[0m - -
+- - - [1;33mo[0m - - [1;33mo[0m - - [1;33mo[0m - - -
+- - - - [1;33md[0m - [1;33md[0m - [1;33md[0m - - - -
+- - - - - [1;33mu[0m [1;33mu[0m [1;33mu[0m - - - - -
+- [1;33mo[0m [1;33mk[0m [1;33mo[0m [1;33md[0m [1;33mu[0m [1;33mw[0m [1;33mu[0m [1;33md[0m [1;33mo[0m [1;33mk[0m [1;33mo[0m -
+- - - - - [1;33mu[0m [1;33mu[0m [1;33mu[0m - - - - -
+- - - - [1;33md[0m - [1;33md[0m - [1;33md[0m - - - -
+- - - [1;33mo[0m - - [1;33mo[0m - - [1;33mo[0m - - -
+- - [1;33mk[0m - - - [1;33mk[0m - - - [1;33mk[0m - -
+- [1;33mo[0m - - - - [1;33mo[0m - - - - [1;33mo[0m -
+- - - - - - - - - - - - -
+
+Solving wudoko!
+Legal words:   ['ale', 'oat', 'zed', 'old', 'zoo']
+Illegal words: []
+Board state: 0001      Board state: 0002      Board state: 0003      Board state: 0004      Board state: 0004 	Adding partial solution #1...
+Board state: 0005      Board state: 0005 	Adding partial solution #2...
+Board state: 0006      Board state: 0007      Board state: 0007 	Adding partial solution #3...
+Board state: 0008      Board state: 0008 	Adding partial solution #4...
+Board state: 0009      Board state: 0010      Board state: 0010 	Adding partial solution #5...
+Board state: 0011      Board state: 0011 	Adding partial solution #6...
+Board state: 0012      Board state: 0013      Board state: 0013 	Adding partial solution #7...
+Board state: 0014      Board state: 0014 	Adding partial solution #8...
+Board state: 0015      Board state: 0016      Board state: 0017      Board state: 0017 	Adding partial solution #9...
+Board state: 0018      Board state: 0018 	Adding partial solution #10...
+Board state: 0019      Board state: 0020      Board state: 0020 	Adding partial solution #11...
+Board state: 0021      Board state: 0021 	Adding partial solution #12...
+Board state: 0022      Board state: 0023      Board state: 0023 	Adding partial solution #13...
+Board state: 0024      Board state: 0024 	Adding partial solution #14...
+Board state: 0025      Board state: 0026      Board state: 0026 	Adding partial solution #15...
+Board state: 0027      Board state: 0027 	Adding partial solution #16...
+Board state: 0028      Board state: 0029      Board state: 0030      Board state: 0031      Board state: 0031 	Adding partial solution #17...
+Board state: 0032      Board state: 0032 	Adding partial solution #18...
+Board state: 0033      Board state: 0034      Board state: 0035      Board state: 0036      Board state: 0036 	Adding partial solution #19...
+Board state: 0037      Board state: 0037 	Adding partial solution #20...
+Board state: 0038      Board state: 0038 	Adding partial solution #21...
+Board state: 0039      Board state: 0040      Board state: 0041      Board state: 0041 	Adding partial solution #22...
+Board state: 0042      Board state: 0042 	Adding partial solution #23...
+Board state: 0043      Board state: 0044      Board state: 0044 	Adding partial solution #24...
+Board state: 0045      Board state: 0045 	Adding partial solution #25...
+Board state: 0046      Board state: 0047      Board state: 0048      Board state: 0049      Board state: 0049 	Adding partial solution #26...
+Board state: 0050      Board state: 0050 	Adding partial solution #27...
+Board state: 0051      Board state: 0052      Board state: 0053      Board state: 0053 	Adding partial solution #28...
+Board state: 0054      Board state: 0054 	Adding partial solution #29...
+Board state: 0055      Board state: 0055 	Adding partial solution #30...
+Board state: 0056      Board state: 0057      Board state: 0057 	Adding partial solution #31...
+Board state: 0058      Board state: 0058 	Adding partial solution #32...
+Board state: 0059      Board state: 0060      Board state: 0060 	Adding partial solution #33...
+Board state: 0061      Board state: 0061 	Adding partial solution #34...
+Board state: 0062      Board state: 0063      Board state: 0064      Board state: 0064 	Adding partial solution #35...
+Board state: 0065      Board state: 0065 	Adding partial solution #36...
+Board state: 0066      Board state: 0067      Board state: 0067 	Adding partial solution #37...
+Board state: 0068      Board state: 0068 	Adding partial solution #38...
+Board state: 0069      Board state: 0070      Board state: 0070 	Adding partial solution #39...
+Board state: 0071      Board state: 0071 	Adding partial solution #40...
+Board state: 0072      Board state: 0073      Board state: 0073 	Adding partial solution #41...
+Board state: 0074      Board state: 0074 	Adding partial solution #42...
+Board state: 0075      Board state: 0076      Board state: 0077      Board state: 0077 	Adding partial solution #43...
+Board state: 0078      Board state: 0078 	Adding partial solution #44...
+Board state: 0079      Board state: 0080      Board state: 0080 	Adding partial solution #45...
+Board state: 0081      Board state: 0081 	Adding partial solution #46...
+Board state: 0082      Board state: 0083      Board state: 0083 	Adding partial solution #47...
+Board state: 0084      Board state: 0084 	Adding partial solution #48...
+Board state: 0085      Board state: 0086      Board state: 0086 	Adding partial solution #49...
+Board state: 0087      Board state: 0087 	Adding partial solution #50...
+Board state: 0088      Board state: 0089      Board state: 0090      Board state: 0091      Board state: 0092      Board state: 0093      Board state: 0093 	Adding partial solution #51...
+Board state: 0094      Board state: 0094 	Adding partial solution #52...
+Board state: 0095      Board state: 0095 	Adding partial solution #53...
+Board state: 0096      Board state: 0097      Board state: 0098      Board state: 0098 	Adding partial solution #54...
+Board state: 0099      Board state: 0099 	Adding partial solution #55...
+Board state: 0100      Board state: 0101      Board state: 0101 	Adding partial solution #56...
+Board state: 0102      Board state: 0102 	Adding partial solution #57...
+Board state: 0103      Board state: 0104      Board state: 0104 	Adding partial solution #58...
+Board state: 0105      Board state: 0105 	Adding partial solution #59...
+Board state: 0106      Board state: 0107      Board state: 0108      Board state: 0108 	Adding partial solution #60...
+Board state: 0109      Board state: 0110      Board state: 0110 	Adding partial solution #61...
+Board state: 0111      Board state: 0112      Board state: 0112 	Adding partial solution #62...
+Board state: 0113      Board state: 0114      Board state: 0114 	Adding partial solution #63...
+Board state: 0115      Board state: 0115 	Adding partial solution #64...
+Board state: 0116      Board state: 0117      Board state: 0117 	Adding partial solution #65...
+Board state: 0118      Board state: 0118 	Adding partial solution #66...
+Board state: 0119      Board state: 0120      Board state: 0120 	Adding partial solution #67...
+Board state: 0121      Board state: 0121 	Adding partial solution #68...
+Board state: 0122      Board state: 0123      Board state: 0124      Board state: 0124 	Adding partial solution #69...
+Board state: 0125      Board state: 0125 	Adding partial solution #70...
+Board state: 0126      Board state: 0127      Board state: 0128      Board state: 0128 	Adding partial solution #71...
+Board state: 0129      Board state: 0130      Board state: 0130 	Adding partial solution #72...
+Board state: 0131      Board state: 0131 	Adding partial solution #73...
+Board state: 0132      Board state: 0133      Board state: 0133 	Adding partial solution #74...
+Board state: 0134      Board state: 0135      Board state: 0135 	Adding partial solution #75...
+Board state: 0136      Board state: 0137      Board state: 0137 	Adding partial solution #76...
+Board state: 0138      Board state: 0138 	Adding partial solution #77...
+Board state: 0139      Board state: 0140      Board state: 0140 	Adding partial solution #78...
+Board state: 0141      Board state: 0141 	Adding partial solution #79...
+Board state: 0142      Board state: 0143      Board state: 0144      Board state: 0144 	Adding partial solution #80...
+Board state: 0145      Board state: 0145 	Adding partial solution #81...
+Board state: 0146      Board state: 0147      Board state: 0148      Board state: 0148 	Adding partial solution #82...
+Board state: 0149      Board state: 0149 	Adding partial solution #83...
+Board state: 0150      Board state: 0151      Board state: 0151 	Adding partial solution #84...
+Board state: 0152      Board state: 0153      Board state: 0153 	Adding partial solution #85...
+Board state: 0154      Board state: 0154 	Adding partial solution #86...
+Board state: 0155      Board state: 0156      Board state: 0157      Board state: 0157 	Adding partial solution #87...
+Board state: 0158      Board state: 0158 	Adding partial solution #88...
+Board state: 0159      Board state: 0160      Board state: 0160 	Adding partial solution #89...
+Board state: 0161      Board state: 0161 	Adding partial solution #90...
+Board state: 0162      Board state: 0163      Board state: 0163 	Adding partial solution #91...
+Board state: 0164      Board state: 0164 	Adding partial solution #92...
+Board state: 0165      Board state: 0166      Board state: 0166 	Adding partial solution #93...
+Board state: 0167      Board state: 0167 	Adding partial solution #94...
+Board state: 0168      Board state: 0169      Board state: 0170      Board state: 0170 	Adding partial solution #95...
+Board state: 0171      Board state: 0171 	Adding partial solution #96...
+Board state: 0172      Board state: 0173      Board state: 0173 	Adding partial solution #97...
+Board state: 0174      Board state: 0174 	Adding partial solution #98...
+Board state: 0175      Board state: 0176      Board state: 0176 	Adding partial solution #99...
+Board state: 0177      Board state: 0177 	Adding partial solution #100...
+Board state: 0178      Board state: 0179      Board state: 0179 	Adding partial solution #101...
+Board state: 0180      Board state: 0180 	Adding partial solution #102...
+Board state: 0181      Board state: 0182      Board state: 0183      Board state: 0184      Board state: 0184 	Adding partial solution #103...
+Board state: 0185      Board state: 0185 	Adding partial solution #104...
+Board state: 0186      Board state: 0187      Board state: 0187 	Adding partial solution #105...
+Board state: 0188      Board state: 0188 	Adding partial solution #106...
+Board state: 0189      Board state: 0190      Board state: 0190 	Adding partial solution #107...
+Board state: 0191      Board state: 0191 	Adding partial solution #108...
+Board state: 0192      Board state: 0193      Board state: 0194      Board state: 0194 	Adding partial solution #109...
+Board state: 0195      Board state: 0195 	Adding partial solution #110...
+Board state: 0196      Board state: 0197      Board state: 0197 	Adding partial solution #111...
+Board state: 0198      Board state: 0199      Board state: 0199 	Adding partial solution #112...
+Board state: 0200      Board state: 0200 	Adding partial solution #113...
+Board state: 0201      Board state: 0202      Board state: 0203      Board state: 0203 	Adding partial solution #114...
+Board state: 0204      Board state: 0204 	Adding partial solution #115...
+Board state: 0205      Board state: 0206      Board state: 0207      Board state: 0207 	Adding partial solution #116...
+Board state: 0208      Board state: 0208 	Adding partial solution #117...
+Board state: 0209      Board state: 0210      Board state: 0211      Board state: 0211 	Adding partial solution #118...
+Board state: 0212      Board state: 0212 	Adding partial solution #119...
+Board state: 0213      Board state: 0214      Board state: 0214 	Adding partial solution #120...
+Board state: 0215      Board state: 0216      Board state: 0217      Board state: 0217 	Adding partial solution #121...
+Board state: 0218      Board state: 0218 	Adding partial solution #122...
+Board state: 0219      Board state: 0220      Board state: 0220 	Adding partial solution #123...
+Board state: 0221      Board state: 0221 	Adding partial solution #124...
+Board state: 0222      Board state: 0223      Board state: 0223 	Adding partial solution #125...
+Board state: 0224      Board state: 0224 	Adding partial solution #126...
+Board state: 0225      Board state: 0226      Board state: 0226 	Adding partial solution #127...
+Board state: 0227      Board state: 0227 	Adding partial solution #128...
+Board state: 0228      Board state: 0229      Board state: 0230      Board state: 0230 	Adding partial solution #129...
+Board state: 0231      Board state: 0231 	Adding partial solution #130...
+Board state: 0232      Board state: 0233      Board state: 0233 	Adding partial solution #131...
+Board state: 0234      Board state: 0234 	Adding partial solution #132...
+Board state: 0235      Board state: 0236      Board state: 0236 	Adding partial solution #133...
+Board state: 0237      Board state: 0237 	Adding partial solution #134...
+Board state: 0238      Board state: 0239      Board state: 0239 	Adding partial solution #135...
+Board state: 0240      Board state: 0240 	Adding partial solution #136...
+Board state: 0241      Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+Board state: 0001      Board state: 0001 	Solving partial solution #1...
+<function Wudoko.solve_allBoards at 0x72b1d54427a0> executed in 11.927631 second(s).
+<function Wudoko.prune_illegalBoards at 0x72b1d5442980> executed in 6.8e-05 second(s).
+
+All boards:
+208 solutions
+Board:
+o a t
+o l a
+z e d
+
+Board:
+o a t
+o l b
+z e d
+
+Board:
+o a t
+o l c
+z e d
+
+Board:
+o a t
+o l d
+z e d
+
+Board:
+o a t
+o l e
+z e d
+
+Board:
+o a t
+o l f
+z e d
+
+Board:
+o a t
+o l g
+z e d
+
+Board:
+o a t
+o l h
+z e d
+
+Board:
+o a t
+o l i
+z e d
+
+Board:
+o a t
+o l j
+z e d
+
+Board:
+o a t
+o l k
+z e d
+
+Board:
+o a t
+o l l
+z e d
+
+Board:
+o a t
+o l m
+z e d
+
+Board:
+o a t
+o l n
+z e d
+
+Board:
+o a t
+o l o
+z e d
+
+Board:
+o a t
+o l p
+z e d
+
+Board:
+o a t
+o l q
+z e d
+
+Board:
+o a t
+o l r
+z e d
+
+Board:
+o a t
+o l s
+z e d
+
+Board:
+o a t
+o l t
+z e d
+
+Board:
+o a t
+o l u
+z e d
+
+Board:
+o a t
+o l v
+z e d
+
+Board:
+o a t
+o l w
+z e d
+
+Board:
+o a t
+o l x
+z e d
+
+Board:
+o a t
+o l y
+z e d
+
+Board:
+o a t
+o l z
+z e d
+
+Board:
+t a o
+a l o
+d e z
+
+Board:
+t a o
+b l o
+d e z
+
+Board:
+t a o
+c l o
+d e z
+
+Board:
+t a o
+d l o
+d e z
+
+Board:
+t a o
+e l o
+d e z
+
+Board:
+t a o
+f l o
+d e z
+
+Board:
+t a o
+g l o
+d e z
+
+Board:
+t a o
+h l o
+d e z
+
+Board:
+t a o
+i l o
+d e z
+
+Board:
+t a o
+j l o
+d e z
+
+Board:
+t a o
+k l o
+d e z
+
+Board:
+t a o
+l l o
+d e z
+
+Board:
+t a o
+m l o
+d e z
+
+Board:
+t a o
+n l o
+d e z
+
+Board:
+t a o
+o l o
+d e z
+
+Board:
+t a o
+p l o
+d e z
+
+Board:
+t a o
+q l o
+d e z
+
+Board:
+t a o
+r l o
+d e z
+
+Board:
+t a o
+s l o
+d e z
+
+Board:
+t a o
+t l o
+d e z
+
+Board:
+t a o
+u l o
+d e z
+
+Board:
+t a o
+v l o
+d e z
+
+Board:
+t a o
+w l o
+d e z
+
+Board:
+t a o
+x l o
+d e z
+
+Board:
+t a o
+y l o
+d e z
+
+Board:
+t a o
+z l o
+d e z
+
+Board:
+o o z
+a l e
+t a d
+
+Board:
+o o z
+a l e
+t b d
+
+Board:
+o o z
+a l e
+t c d
+
+Board:
+o o z
+a l e
+t d d
+
+Board:
+o o z
+a l e
+t e d
+
+Board:
+o o z
+a l e
+t f d
+
+Board:
+o o z
+a l e
+t g d
+
+Board:
+o o z
+a l e
+t h d
+
+Board:
+o o z
+a l e
+t i d
+
+Board:
+o o z
+a l e
+t j d
+
+Board:
+o o z
+a l e
+t k d
+
+Board:
+o o z
+a l e
+t l d
+
+Board:
+o o z
+a l e
+t m d
+
+Board:
+o o z
+a l e
+t n d
+
+Board:
+o o z
+a l e
+t o d
+
+Board:
+o o z
+a l e
+t p d
+
+Board:
+o o z
+a l e
+t q d
+
+Board:
+o o z
+a l e
+t r d
+
+Board:
+o o z
+a l e
+t s d
+
+Board:
+o o z
+a l e
+t t d
+
+Board:
+o o z
+a l e
+t u d
+
+Board:
+o o z
+a l e
+t v d
+
+Board:
+o o z
+a l e
+t w d
+
+Board:
+o o z
+a l e
+t x d
+
+Board:
+o o z
+a l e
+t y d
+
+Board:
+o o z
+a l e
+t z d
+
+Board:
+t a d
+a l e
+o o z
+
+Board:
+t b d
+a l e
+o o z
+
+Board:
+t c d
+a l e
+o o z
+
+Board:
+t d d
+a l e
+o o z
+
+Board:
+t e d
+a l e
+o o z
+
+Board:
+t f d
+a l e
+o o z
+
+Board:
+t g d
+a l e
+o o z
+
+Board:
+t h d
+a l e
+o o z
+
+Board:
+t i d
+a l e
+o o z
+
+Board:
+t j d
+a l e
+o o z
+
+Board:
+t k d
+a l e
+o o z
+
+Board:
+t l d
+a l e
+o o z
+
+Board:
+t m d
+a l e
+o o z
+
+Board:
+t n d
+a l e
+o o z
+
+Board:
+t o d
+a l e
+o o z
+
+Board:
+t p d
+a l e
+o o z
+
+Board:
+t q d
+a l e
+o o z
+
+Board:
+t r d
+a l e
+o o z
+
+Board:
+t s d
+a l e
+o o z
+
+Board:
+t t d
+a l e
+o o z
+
+Board:
+t u d
+a l e
+o o z
+
+Board:
+t v d
+a l e
+o o z
+
+Board:
+t w d
+a l e
+o o z
+
+Board:
+t x d
+a l e
+o o z
+
+Board:
+t y d
+a l e
+o o z
+
+Board:
+t z d
+a l e
+o o z
+
+Board:
+z o o
+e l a
+d d t
+
+Board:
+z o o
+e l a
+d a t
+
+Board:
+z o o
+e l a
+d b t
+
+Board:
+z o o
+e l a
+d c t
+
+Board:
+z o o
+e l a
+d e t
+
+Board:
+z o o
+e l a
+d f t
+
+Board:
+z o o
+e l a
+d g t
+
+Board:
+z o o
+e l a
+d h t
+
+Board:
+z o o
+e l a
+d i t
+
+Board:
+z o o
+e l a
+d j t
+
+Board:
+z o o
+e l a
+d k t
+
+Board:
+z o o
+e l a
+d l t
+
+Board:
+z o o
+e l a
+d m t
+
+Board:
+z o o
+e l a
+d n t
+
+Board:
+z o o
+e l a
+d o t
+
+Board:
+z o o
+e l a
+d p t
+
+Board:
+z o o
+e l a
+d q t
+
+Board:
+z o o
+e l a
+d r t
+
+Board:
+z o o
+e l a
+d s t
+
+Board:
+z o o
+e l a
+d t t
+
+Board:
+z o o
+e l a
+d u t
+
+Board:
+z o o
+e l a
+d v t
+
+Board:
+z o o
+e l a
+d w t
+
+Board:
+z o o
+e l a
+d x t
+
+Board:
+z o o
+e l a
+d y t
+
+Board:
+z o o
+e l a
+d z t
+
+Board:
+d d t
+e l a
+z o o
+
+Board:
+d a t
+e l a
+z o o
+
+Board:
+d b t
+e l a
+z o o
+
+Board:
+d c t
+e l a
+z o o
+
+Board:
+d e t
+e l a
+z o o
+
+Board:
+d f t
+e l a
+z o o
+
+Board:
+d g t
+e l a
+z o o
+
+Board:
+d h t
+e l a
+z o o
+
+Board:
+d i t
+e l a
+z o o
+
+Board:
+d j t
+e l a
+z o o
+
+Board:
+d k t
+e l a
+z o o
+
+Board:
+d l t
+e l a
+z o o
+
+Board:
+d m t
+e l a
+z o o
+
+Board:
+d n t
+e l a
+z o o
+
+Board:
+d o t
+e l a
+z o o
+
+Board:
+d p t
+e l a
+z o o
+
+Board:
+d q t
+e l a
+z o o
+
+Board:
+d r t
+e l a
+z o o
+
+Board:
+d s t
+e l a
+z o o
+
+Board:
+d t t
+e l a
+z o o
+
+Board:
+d u t
+e l a
+z o o
+
+Board:
+d v t
+e l a
+z o o
+
+Board:
+d w t
+e l a
+z o o
+
+Board:
+d x t
+e l a
+z o o
+
+Board:
+d y t
+e l a
+z o o
+
+Board:
+d z t
+e l a
+z o o
+
+Board:
+z e d
+o l d
+o a t
+
+Board:
+z e d
+o l a
+o a t
+
+Board:
+z e d
+o l b
+o a t
+
+Board:
+z e d
+o l c
+o a t
+
+Board:
+z e d
+o l e
+o a t
+
+Board:
+z e d
+o l f
+o a t
+
+Board:
+z e d
+o l g
+o a t
+
+Board:
+z e d
+o l h
+o a t
+
+Board:
+z e d
+o l i
+o a t
+
+Board:
+z e d
+o l j
+o a t
+
+Board:
+z e d
+o l k
+o a t
+
+Board:
+z e d
+o l l
+o a t
+
+Board:
+z e d
+o l m
+o a t
+
+Board:
+z e d
+o l n
+o a t
+
+Board:
+z e d
+o l o
+o a t
+
+Board:
+z e d
+o l p
+o a t
+
+Board:
+z e d
+o l q
+o a t
+
+Board:
+z e d
+o l r
+o a t
+
+Board:
+z e d
+o l s
+o a t
+
+Board:
+z e d
+o l t
+o a t
+
+Board:
+z e d
+o l u
+o a t
+
+Board:
+z e d
+o l v
+o a t
+
+Board:
+z e d
+o l w
+o a t
+
+Board:
+z e d
+o l x
+o a t
+
+Board:
+z e d
+o l y
+o a t
+
+Board:
+z e d
+o l z
+o a t
+
+Board:
+d e z
+d l o
+t a o
+
+Board:
+d e z
+a l o
+t a o
+
+Board:
+d e z
+b l o
+t a o
+
+Board:
+d e z
+c l o
+t a o
+
+Board:
+d e z
+e l o
+t a o
+
+Board:
+d e z
+f l o
+t a o
+
+Board:
+d e z
+g l o
+t a o
+
+Board:
+d e z
+h l o
+t a o
+
+Board:
+d e z
+i l o
+t a o
+
+Board:
+d e z
+j l o
+t a o
+
+Board:
+d e z
+k l o
+t a o
+
+Board:
+d e z
+l l o
+t a o
+
+Board:
+d e z
+m l o
+t a o
+
+Board:
+d e z
+n l o
+t a o
+
+Board:
+d e z
+o l o
+t a o
+
+Board:
+d e z
+p l o
+t a o
+
+Board:
+d e z
+q l o
+t a o
+
+Board:
+d e z
+r l o
+t a o
+
+Board:
+d e z
+s l o
+t a o
+
+Board:
+d e z
+t l o
+t a o
+
+Board:
+d e z
+u l o
+t a o
+
+Board:
+d e z
+v l o
+t a o
+
+Board:
+d e z
+w l o
+t a o
+
+Board:
+d e z
+x l o
+t a o
+
+Board:
+d e z
+y l o
+t a o
+
+Board:
+d e z
+z l o
+t a o
+
+done!
